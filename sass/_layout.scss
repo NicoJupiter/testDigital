@@ -10,9 +10,62 @@
 .header {
   width: 10%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $color-grey;
+
+  &__brand {
+    padding: 2rem;
+    background-color: $color-white;
+    align-self: stretch;
+
+    &--img {
+
+    }
+  }
 
   &__content {
-    background-color: $color-grey;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+
+    &--menu {
+      padding-top: 5rem;
+    }
+
+    &--button {
+      transform: rotate(-90deg);
+      font-family: Rajdhani, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $cooper;
+      background-color: transparent;
+      border: 1px solid $cooper;
+      padding: 2rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--logo {
+      padding-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+
+
+      & > *:not(:last-child) {
+        padding-bottom: .7rem;
+      }
+
+    }
+
 
   }
 }
