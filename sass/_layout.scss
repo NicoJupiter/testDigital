@@ -1,0 +1,39 @@
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+//////////////////////////////////////////
+//HEADER PART
+.header {
+  width: 10%;
+  height: 100%;
+
+  &__content {
+    background-color: $color-grey;
+
+  }
+}
+
+//////////////////////////////////////////
+//About
+.about {
+  width: 40%;
+  background-color: orangered;
+}
+
+//////////////////////////////////////////
+//SRVICE
+.service {
+  width: 25%;
+  background-color: yellowgreen;
+}
+
+//////////////////////////////////////////
+//CONTACT
+.contact {
+  width: 25%;
+  background-color: rosybrown;
+}
