@@ -5,7 +5,6 @@
   display: flex;
   overflow: hidden;
 
-
 }
 
 
@@ -43,7 +42,7 @@
       color: $color-white;
       border-radius: 50%;
       border: 1px solid $cooper;
-      background-color: transparent;
+      background-color: $cooper;
       font-weight: 600;
     }
 
@@ -107,7 +106,7 @@
 
 
   &__title {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
     padding-right:5rem;
   }
 
@@ -140,7 +139,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-
+  transition: all .5s;
 
   &::before {
     background-color: rgba($color-black, 0.4);
@@ -150,6 +149,10 @@
     position: absolute;
     width: 100%;
     top: 0;
+  }
+
+  &:hover {
+    flex: 2;
   }
 
   &:hover:before {
@@ -168,7 +171,7 @@
 
 
   &__title {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
     padding-right:5rem;
   }
 
@@ -187,11 +190,3 @@
 
 }
 
-
-.contact:hover {
-  flex: 2;
-}
-
-.contact:hover ~ .about {
-  flex: 1;
-}
