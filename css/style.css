@@ -11,6 +11,36 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+.heading-title {
+  font-family: Rajdhani, sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff; }
+
+.paragraph {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #fff; }
+
+.span-discover {
+  font-family: Rajdhani, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff; }
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -58,7 +88,19 @@ html {
 
 .about {
   width: 40%;
-  background-color: orangered; }
+  height: 100%;
+  background: black url("../img/vrImg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column; }
+  .about__title {
+    margin-bottom: 3rem;
+    padding-right: 5rem; }
+  .about__paragraph {
+    margin-bottom: auto;
+    padding-right: 10rem; }
 
 .service {
   width: 25%;

@@ -74,7 +74,25 @@
 //About
 .about {
   width: 40%;
-  background-color: orangered;
+  height: 100%;
+  background: rgba(0,0,0,1) url("../img/vrImg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 3rem;
+    padding-right:5rem;
+
+  }
+
+  &__paragraph {
+    margin-bottom: auto;
+    padding-right: 10rem;
+  }
+
 }
 
 //////////////////////////////////////////
