@@ -1,0 +1,95 @@
+
+//////////////////////////////////////////
+//HEADER PART
+.header {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $color-white;
+
+  &__brand {
+    padding: 2rem;
+    margin: auto;
+    align-self: stretch;
+
+    &--img {
+
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    padding-top: 5rem;
+    align-items: center;
+    align-self: stretch;
+    background-color: $color-grey;
+    
+    &--icon {
+      position: absolute;
+
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 2px;
+        background: $cooper;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+      }
+
+      &::before {
+        top: -.8rem;
+      }
+      &::after {
+        top: .8rem;
+      }
+    }
+
+    &--button {
+      transform: rotate(-90deg);
+      font-family: Rajdhani, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $cooper;
+      background-color: transparent;
+      border: 1px solid $cooper;
+      padding: 2rem;
+      margin-top: 20rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--logo {
+      padding-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+
+
+      & > *:not(:last-child) {
+        padding-bottom: .7rem;
+      }
+
+    }
+
+
+  }
+}

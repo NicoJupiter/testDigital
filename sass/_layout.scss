@@ -4,77 +4,15 @@
   height: 100vh;
   display: flex;
   overflow: hidden;
+
+
 }
 
-//////////////////////////////////////////
-//HEADER PART
-.header {
-  width: 10%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: $color-grey;
-
-  &__brand {
-    padding: 2rem;
-    background-color: $color-white;
-    align-self: stretch;
-
-    &--img {
-
-    }
-  }
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-
-    &--menu {
-      padding-top: 5rem;
-    }
-
-    &--button {
-      transform: rotate(-90deg);
-      font-family: Rajdhani, sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: $cooper;
-      background-color: transparent;
-      border: 1px solid $cooper;
-      padding: 2rem;
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    &--logo {
-      padding-bottom: 5rem;
-      display: flex;
-      flex-direction: column;
-
-
-      & > *:not(:last-child) {
-        padding-bottom: .7rem;
-      }
-
-    }
-
-
-  }
-}
 
 //////////////////////////////////////////
 //About
 .about {
-  width: 40%;
+  flex: 2;
   height: 100%;
   background: rgba(0,0,0,1) url("../img/vrImg.jpg");
   background-size: cover;
@@ -84,8 +22,8 @@
   flex-direction: column;
 
   &__title {
-    margin-bottom: 3rem;
-    padding-right:5rem;
+    margin-bottom: 5rem;
+    padding-right:  5rem;
 
   }
 
@@ -95,6 +33,29 @@
 
   &__next {
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &--button {
+      width: 5rem;
+      height: 5rem;
+      color: $color-white;
+      border-radius: 50%;
+      border: 1px solid $cooper;
+      background-color: transparent;
+      font-weight: 600;
+    }
+
+    &--button:before {
+      content: "";
+      position: absolute;
+      width: 10rem;
+      height: 1px;
+      right: 4rem;
+      top: 50%;
+      background: $color-white;
+    }
   }
 
 }
@@ -102,15 +63,17 @@
 //////////////////////////////////////////
 //SRVICE
 .service {
-  width: 25%;
+
   height: 100%;
   background: rgba(0,0,0,1) url("../img/pcImg.jpg");
   background-size: cover;
   background-position: center;
   padding: 5rem;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   position: relative;
   transition: all .5s;
 
@@ -125,7 +88,7 @@
   }
 
   &:hover {
-    width: 50%;
+    flex: 2;
   }
 
   &:hover:before {
@@ -138,13 +101,13 @@
   }
 
   &__paragraph {
-    padding-right: 10rem;
+    padding-right: 8rem;
     opacity: 0;
   }
 
 
   &__title {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     padding-right:5rem;
   }
 
@@ -166,13 +129,14 @@
 //////////////////////////////////////////
 //CONTACT
 .contact {
-  width: 25%;
+
   height: 100%;
   background: rgba($color-black, 0.5) url("../img/contactImg.jpg");
   background-size: cover;
   background-position: center;
   padding: 5rem;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -188,10 +152,6 @@
     top: 0;
   }
 
-  &:hover {
-    width: 50%;
-  }
-
   &:hover:before {
     content: '';
     background-color: transparent;
@@ -202,13 +162,13 @@
   }
 
   &__paragraph {
-    padding-right: 10rem;
+    padding-right: 8rem;
     opacity: 0;
   }
 
 
   &__title {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     padding-right:5rem;
   }
 
@@ -225,4 +185,13 @@
     }
   }
 
+}
+
+
+.contact:hover {
+  flex: 2;
+}
+
+.contact:hover ~ .about {
+  flex: 1;
 }
